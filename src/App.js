@@ -1,24 +1,41 @@
 import logo from './logo.svg';
 import './App.css';
+import {Button, Container, Typography, AppBar} from '@mui/material';
+import React,{useState} from 'react';
+import { questions } from './questions';
 
 function App() {
+  
+  const [currentQuestion, setCurrenQuestion] = useState(0);
+  
+  const handleAnswerOptionClick = (goto) =>{
+    const nextQuestion = goto;
+    setCurrenQuestion(nextQuestion);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    
+    <Container className='question-section' align='center'>
+      <Container>
+      <AppBar className='app-bar'> 
+          <Typography variant='h5'>
+            Test de depresion. 
+          </Typography> 
+        </AppBar>
+      </Container>
+      <br/><br/><br/><br/><br/><br/><br/>
+        <Typography className='question-text'>
+          {questions[currentQuestion].questionText}
+        </Typography>
+        <br></br>
+      <Container className='answer-section'> 
+          {questions[currentQuestion].answerOptions.map((answerOption)=> (
+            <Button  variant='contained' onClick={() => handleAnswerOptionClick(answerOption.goto)}>{answerOption.answerText}</Button>
+          ))}
+      </Container>
+    </Container>
+      
+   
   );
 }
 
