@@ -1,9 +1,9 @@
-import logo from './logo.svg';
+
 import './App.css';
-import {Button, Container, Typography, AppBar, Stack,Box, Toolbar,Paper, IconButton, LinearProgress} from '@mui/material';
+import {Button, Container, Typography, AppBar, Stack,Box, Toolbar, IconButton, LinearProgress} from '@mui/material';
 import React,{useState} from 'react';
 import { questions } from './questions';
-import { ClassNames } from '@emotion/react';
+
 
 
 
@@ -14,7 +14,7 @@ function App() {
   const [progress, setProgress] = React.useState(0);
   const [currentQuestion, setCurrenQuestion] = useState(0);
   
-  const handleAnswerOptionClick = (goto, questionText) =>{
+  const handleAnswerOptionClick = (goto) =>{
     const nextQuestion = goto;
     if(goto === 0){
       setProgress(0);
