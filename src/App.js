@@ -16,7 +16,7 @@ function App() {
   
   const handleAnswerOptionClick = (goto, questionText) =>{
     const nextQuestion = goto;
-    if(goto == 0){
+    if(goto === 0){
       setProgress(0);
     }
     else{
