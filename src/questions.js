@@ -22,8 +22,8 @@ export const questions = [
         //2
         questionText: 'Te sientes sensible a la critica?',
         answerOptions: [
-            {answerText: ' Si ', goto: 0}, /** */
-            {answerText:'No ', goto: 0}, /** */
+            {answerText: ' Si ', goto: 18}, /** */
+            {answerText:'No ', goto: 10}, /** */
         ],
     },
     {
@@ -158,7 +158,7 @@ export const questions = [
             questionText: ' Dejaste de disfrutar hacer tus actividades que te hacian feliz?' ,
             answerOptions: [
                 {answerText: ' Si ', goto: 15 }, 
-                {answerText:'No ', goto: 12 }, 
+                {answerText:'No ', goto: 19 }, 
             ],
             
         },
@@ -168,7 +168,7 @@ export const questions = [
             questionText: ' Haz tenido ataques subitos de ira?' ,
             answerOptions: [
                 {answerText: ' Si ', goto: 17 }, 
-                {answerText:'No ', goto: 16 },
+                {answerText:'No ', goto: 11 },
             ],
             
         },
@@ -177,8 +177,8 @@ export const questions = [
             //19
             questionText: ' Haz sentido odio a ti mismo?' ,
             answerOptions: [
-                {answerText: ' Si ', goto: 13 }, 
-                {answerText:'No ', goto: 20 }, 
+                {answerText: ' Si ', goto: 20 }, 
+                {answerText:'No ', goto: 13 }, 
             ],
             
         },
@@ -229,6 +229,26 @@ export const questions = [
             answerOptions: [
                 {answerText: ' Si ', goto: 7 }, 
                 {answerText:'No ', goto: 7 }, 
+            ],
+            
+        },
+
+        {
+            //25 -> 
+            questionText: ' Haz sentido odio a ti mismo?' ,
+            answerOptions: [
+                {answerText: ' Si ', goto: 26 }, 
+                {answerText:'No ', goto: 13 }, 
+            ],
+            
+        },
+
+        {
+            //26 
+            questionText: ' Tienes dificultad para concentrarte?' ,
+            answerOptions: [
+                {answerText: ' Si ', goto: 6 }, 
+                {answerText:'No ', goto: 5 }, 
             ],
             
         },
