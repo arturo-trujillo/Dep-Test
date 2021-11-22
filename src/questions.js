@@ -30,8 +30,8 @@ export const questions = [
         //3
         questionText: 'Sufres algun padecimiento fisico?',
         answerOptions: [
-            {answerText: ' Si ', goto: 0}, /** */
-            {answerText:'No ', goto: 0 }, /** */
+            {answerText: ' Si ', goto: 28}, /** */
+            {answerText:'No ', goto: 27 }, /** */
         ],      
     },
         /* Basandonos en el esquematico se iniciara de arriba hacia abajo con las opciones (RESULTADOS) */
