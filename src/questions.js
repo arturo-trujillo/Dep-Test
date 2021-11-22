@@ -254,6 +254,304 @@ export const questions = [
         },
 
      
+        {
+            //27 
+            questionText: ' Te haz mudado de tu casa?' ,
+            answerOptions: [
+                {answerText: ' Si ', goto: 30 }, 
+                {answerText:'No ', goto: 29 }, 
+            ],
+            
+        },
 
+        {
+            //28 
+            questionText: ' Te trasladaron a un centro de adultos mayores?' ,
+            answerOptions: [
+                {answerText: ' Si ', goto: 32 }, 
+                {answerText:'No ', goto: 31 }, 
+            ],
+            
+        },
+
+        {
+            //29 
+            questionText: ' Sufres dolores de cuerpo?' ,
+            answerOptions: [
+                {answerText: ' Si ', goto: 34 }, 
+                {answerText:'No ', goto: 33 }, 
+            ],
+            
+        },
+
+        {
+            //30 
+            questionText: ' Tienes dolores croncicos?' ,
+            answerOptions: [
+                {answerText: ' Si ', goto: 35 }, 
+                {answerText:'No ', goto: 35 }, 
+            ],
+            
+        },
+
+        {
+            //31 
+            questionText: ' Tienes mucho dolor en tu cuerpo?' ,
+            answerOptions: [
+                {answerText: ' Si ', goto: 38 }, 
+                {answerText:'No ', goto: 37 }, 
+            ],
+            
+        },
+
+        {
+            //32
+            questionText: ' Padeces dolores cronicos que te inmovilizan?' ,
+            answerOptions: [
+                {answerText: ' Si ', goto: 40 }, 
+                {answerText:'No ', goto: 39 }, 
+            ],
+            
+        },
+
+        {
+            //33 
+            questionText: ' Haz dejado de hacer actividades que te gustaban?' ,
+            answerOptions: [
+                {answerText: ' Si ', goto: 42 }, 
+                {answerText:'No ', goto: 41 }, 
+            ],
+            
+        },
+
+        {
+            //34 
+            questionText: ' Haz perdido la independencia de tu cuerpo?' ,
+            answerOptions: [
+                {answerText: ' Si ', goto: 44 }, 
+                {answerText:'No ', goto: 43 }, 
+            ],
+            
+        },
+
+        {
+            //35 
+            questionText: ' Tienes problemas de soledad?' ,
+            answerOptions: [
+                {answerText: ' Si ', goto: 46 }, 
+                {answerText:'No ', goto: 45 }, 
+            ],
+            
+        },
+
+        {
+            //36 
+            questionText: ' Tus seres queridos se han empezado a morir?' ,
+            answerOptions: [
+                {answerText: ' Si ', goto: 48 }, 
+                {answerText:'No ', goto: 47 }, 
+            ],
+            
+        },
+
+        {
+            //37
+            questionText: ' Haz dejado de hacer actividades que te gustan?' ,
+            answerOptions: [
+                {answerText: ' Si ', goto: 50 }, 
+                {answerText:'No ', goto: 49 }, 
+            ],
+            
+        },
+
+        {
+            //38 
+            questionText: ' Haz perdido la independencia de tu cuerpo?' ,
+            answerOptions: [
+                {answerText: ' Si ', goto: 52 }, 
+                {answerText:'No ', goto: 51 }, 
+            ],
+            
+        },
+
+        {
+            //39 
+            questionText: ' Tienes problemas con estar solo?' ,
+            answerOptions: [
+                {answerText: ' Si ', goto: 54 }, 
+                {answerText:'No ', goto: 53 }, 
+            ],
+            
+        },
+
+        {
+            //40
+            questionText: ' Tus seres queridos se han empezado a morir?' ,
+            answerOptions: [
+                {answerText: ' Si ', goto: 56 }, 
+                {answerText:'No ', goto: 55 }, 
+            ],
+            
+        },
+
+        {
+            //41 
+            questionText: ' Sufres problemas para dormir?' ,
+            answerOptions: [
+                {answerText: ' Si ', goto: 4 }, 
+                {answerText:'No ', goto: 4 }, 
+            ],
+            
+        },
+
+        {
+            //42 
+            questionText: ' Sientes fatiga la mayor parte del tiempo?' ,
+            answerOptions: [
+                {answerText: ' Si ', goto: 8 }, 
+                {answerText:'No ', goto: 4 }, 
+            ],
+            
+        },
+
+        {
+            //43 
+            questionText: ' Sufres problemas para dormir?' ,
+            answerOptions: [
+                {answerText: ' Si ', goto: 4 }, 
+                {answerText:'No ', goto: 4 }, 
+            ],
+            
+        },
+
+        {
+            //44 
+            questionText: '  Sientes fatiga la mayor parte del tiempo?' ,
+            answerOptions: [
+                {answerText: ' Si ', goto: 6 }, 
+                {answerText:'No ', goto: 4 }, 
+            ],
+            
+        },
+
+        {
+            //45 
+            questionText: ' Sufres problemas para dormir?' ,
+            answerOptions: [
+                {answerText: ' Si ', goto: 4 }, 
+                {answerText:'No ', goto: 4 }, 
+            ],
+            
+        },
+
+        {
+            //46 
+            questionText: ' Sientes fatiga la mayor parte del tiempo?' ,
+            answerOptions: [
+                {answerText: ' Si ', goto: 5 }, 
+                {answerText:'No ', goto: 4 }, 
+            ],
+            
+        },
+
+        {
+            //47 
+            questionText: ' Sufres problemas para dormir?' ,
+            answerOptions: [
+                {answerText: ' Si ', goto: 5 }, 
+                {answerText:'No ', goto: 4 }, 
+            ],
+            
+        },
+
+        {
+            //48
+            questionText: ' Sientes fatiga la mayor parte del tiempo?' ,
+            answerOptions: [
+                {answerText: ' Si ', goto: 6 }, 
+                {answerText:'No ', goto: 6 }, 
+            ],
+            
+        },
+
+        {
+            //49
+            questionText: ' Sufres problemas para dormir?' ,
+            answerOptions: [
+                {answerText: ' Si ', goto: 4 }, 
+                {answerText:'No ', goto: 4 }, 
+            ],
+            
+        },
+
+        {
+            //50
+            questionText: ' Sientes fatiga la mayor parte del tiempo?' ,
+            answerOptions: [
+                {answerText: ' Si ', goto: 4 }, 
+                {answerText:'No ', goto: 4 }, 
+            ],
+            
+        },
+
+        {
+            //51 
+            questionText: ' Sufres problemas para dormir?' ,
+            answerOptions: [
+                {answerText: ' Si ', goto: 8 }, 
+                {answerText:'No ', goto: 4 }, 
+            ],
+            
+        },
+
+        {
+            //52 
+            questionText: ' Sientes fatiga la mayor parte del tiempo?' ,
+            answerOptions: [
+                {answerText: ' Si ', goto: 6 }, 
+                {answerText:'No ', goto: 8 }, 
+            ],
+            
+        },
+
+        {
+            //53 
+            questionText: 'Sufres problemas para dormir?' ,
+            answerOptions: [
+                {answerText: ' Si ', goto: 4 }, 
+                {answerText:'No ', goto: 4 }, 
+            ],
+            
+        },
+
+        {
+            //54 
+            questionText: ' Sientes fatiga la mayor parte del tiempo?' ,
+            answerOptions: [
+                {answerText: ' Si ', goto: 6 }, 
+                {answerText:'No ', goto: 6 }, 
+            ],
+            
+        },
+
+        {
+            //55 
+            questionText: ' Sufres problemas para dormir?' ,
+            answerOptions: [
+                {answerText: ' Si ', goto: 6 }, 
+                {answerText:'No ', goto: 6 }, 
+            ],
+            
+        },
+
+        {
+            //56 
+            questionText: ' Sientes fatiga la mayor parte del tiempo?' ,
+            answerOptions: [
+                {answerText: ' Si ', goto: 7 }, 
+                {answerText:'No ', goto: 7 }, 
+            ],
+            
+        },
 
 ];
