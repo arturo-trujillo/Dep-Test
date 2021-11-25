@@ -1,8 +1,14 @@
-import {Button, Container, Typography, AppBar,Box, Toolbar, IconButton} from '@mui/material';
+import {Button, Container, Typography, AppBar,Box, Toolbar, IconButton, Modal,useState} from '@mui/material';
 import React from 'react';
+import Helpscr from './Helpscr';
 
 
 const Navbar = () => {
+
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
     return(
 
 
@@ -20,9 +26,17 @@ const Navbar = () => {
               
             </IconButton>
             <Typography variant="h6" component="div" sx={{ flexGrow: 1, color:"#3b3b3b" }}>
-              Test Depresion
+            ¿Tienes depresion?
             </Typography>
-            <Button  variant='outlined' sx={{color:"#3b3b3b", borderColor:"#3b3b3b" }}>Ayuda</Button>
+            <Button  onClick={handleOpen} variant='outlined' sx={{color:"#3b3b3b", borderColor:"#3b3b3b" }}>Ayuda</Button>
+            <Modal
+              open={open}
+              onClose={handleClose}
+              aria-labelledby="modal-modal-title"
+              aria-describedby="modal-modal-description"
+            >
+              <Helpscr />
+            </Modal>
           </Toolbar>
         </AppBar>
         </Box>

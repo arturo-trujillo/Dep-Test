@@ -1,23 +1,33 @@
 import './App.css';
-import React from 'react';
+import React, {useState} from 'react';
 import Qform from './Components/Questionsform';
 import Navbar from './Components/Navbar';
+import Welcomescr from './Components/Welcomescr';
+import { render } from '@testing-library/react';
 
 function App() {
 
-  
+  const [state, setState] = useState('start');
  
- 
-
-  return (
+    return(
+       <div>
+         {state === 'start' && (
+           <div>
+           <Navbar />
+           <Welcomescr clickBtn={() => setState('state2')} />
+           </div>
+         )}
+          {state === 'state2' &&(
+            <div>
+            <Navbar />
+            <Qform  clickBtn={() => setState('start')}/>
+            </div>
+          )}
+       </div>
+    );
+      
     
-    <div>
-      <Navbar />
-      <Qform />
-
-    </div>
-   
-  );
+  
 }
 
 export default App;

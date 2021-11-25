@@ -1,6 +1,8 @@
 import {Button, Container, Typography, Stack,Box,LinearProgress,Paper} from '@mui/material';
 import React,{useState} from 'react';
 import { questions } from '../questions';
+import  ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
+import HomeIcon from '@material-ui/icons/Home';
 
 
 
@@ -9,7 +11,7 @@ import { questions } from '../questions';
 
 
 
-const Qform = ()=> {
+const Qform = (props)=> {
 
     const [progress, setProgress] = useState(0);
     const [currentQuestion, setCurrenQuestion] = useState(0);
@@ -36,11 +38,19 @@ const Qform = ()=> {
      
       
       <Paper variant='outlined' sx={{color:'#3b3b3b', backgroundColor:'#ffedc5', marginLeft:'50px', marginRight:'50px', borderRadius:'20px'}}>
-  
-        
+        <Stack direction='row'>
+
+       <Button variant='contained' onClick={props.clickBtn} sx={{backgroundColor:'#8aa889', borderRadius:'25px', marginTop:'20px',marginLeft:'20px'}}onClick={() => handleAnswerOptionClick(0)}>
+         <ChevronLeftIcon /> 
+         </Button> 
+        <Button variant='contained' onClick={props.clickBtn} sx={{backgroundColor:'#8aa889', borderRadius:'25px', marginTop:'20px', marginLeft:'380px'}} onClick={props.clickBtn}>
+         <HomeIcon /> 
+         </Button> 
+
+        </Stack>
       <LinearProgress variant="determinate" value={progress} sx={{backgroundColor:'#cf7b44', marginTop:'25px', marginLeft:'20px', marginRight:'20px', borderRadius:'20px' }} />
         <Container align='center' >
-          <Box sx={{backgroundColor:'#8aa889', borderRadius:'20px', color:'#FFFFFF'}}>
+          <Box sx={{backgroundColor:'#8aa889', borderRadius:'20px', color:'#FFFFFF', boxShadow:2}}>
           <Typography className='question-text' sx={{margin:'40px', fontFamily:'verdana', fontSize:'18px' }}>
             {questions[currentQuestion].questionText}
           </Typography>
