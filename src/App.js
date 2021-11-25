@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 import Qform from './Components/Questionsform';
 import Navbar from './Components/Navbar';
 import Welcomescr from './Components/Welcomescr';
-import { render } from '@testing-library/react';
+
 
 function App() {
 

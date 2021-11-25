@@ -40,10 +40,10 @@ const Qform = (props)=> {
       <Paper variant='outlined' sx={{color:'#3b3b3b', backgroundColor:'#ffedc5', marginLeft:'50px', marginRight:'50px', borderRadius:'20px'}}>
         <Stack direction='row'>
 
-       <Button variant='contained' onClick={props.clickBtn} sx={{backgroundColor:'#8aa889', borderRadius:'25px', marginTop:'20px',marginLeft:'20px'}}onClick={() => handleAnswerOptionClick(0)}>
+       <Button variant='contained'  sx={{backgroundColor:'#8aa889', borderRadius:'25px', marginTop:'20px',marginLeft:'20px'}}onClick={() => handleAnswerOptionClick(0)}>
          <ChevronLeftIcon /> 
          </Button> 
-        <Button variant='contained' onClick={props.clickBtn} sx={{backgroundColor:'#8aa889', borderRadius:'25px', marginTop:'20px', marginLeft:'380px'}} onClick={props.clickBtn}>
+        <Button variant='contained'  sx={{backgroundColor:'#8aa889', borderRadius:'25px', marginTop:'20px', marginLeft:'380px'}} onClick={props.clickBtn}>
          <HomeIcon /> 
          </Button> 
 

@@ -1,5 +1,4 @@
 import { Button, Typography,Box, Container } from "@mui/material";
-import { border, borderRadius } from "@mui/system";
 import React from "react";
 
 const Welcomescr= (props)=> {
